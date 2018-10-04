@@ -14,7 +14,7 @@ module.exports = {
     devtool: "source-map",
     devServer: {
       contentBase: "./dist",
-      hot: true,
+      // hot: true,
       compress: true,
     },
     resolve: {
@@ -38,6 +38,6 @@ module.exports = {
     },
     plugins: [
       new HtmlWebpackPlugin({template: path.resolve(__dirname, "public", "index.html")}),
-      new webpack.HotModuleReplacementPlugin(),
+      // new webpack.HotModuleReplacementPlugin(),
     ]
 };
